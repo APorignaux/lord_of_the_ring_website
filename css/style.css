@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(../image/the-house-of-tom-bombadil-ray-gilronan.jpg) center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header nav {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+    list-style: none; /*retire les puces de la liste*/
+    justify-content: space-around; /*espace les li*/
+    width: 20%;
+}
+header nav ul li {
+    color:white;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: aniron; /*defini la police*/
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+header nav ul li a:hover{ /*lorsque l'on va survoler le lien*/
+    color: red;
+    transition: 3s;
+}
+header main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    height: 100vh;
+}
+body header div{
+    display: flex;
+    height: calc(100vh - 70px);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 20%;
+}
+main section{
+    background-color: white;
+    text-align: center;
+    padding: 300px 0;
+}
+section>div{ /*permet de ne selctionner que la div ligne 25-29 sans interferer avec celles qui sont à l'interieur*/
+    width: 100%;
+    height: 30vh;
+    display: flex;
+}
+main section>div div {
+    justify-content: space-around;
+    width: 100%;
+    height: 30vh;
+    margin: 0 50px;
+    background-color: green;
+}
+main.carte>div{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+}
+h2{
+    font-family: aniron;
+}
+h3{
+    font-family: aniron;
+}
+@font-face {
+    font-family: aniron;
+    src: url(../font_family_libraby/aniron/anirb___.ttf);
+    src:url(../font_family_libraby/aniron/Aniron.eot),
+        url(../font_family_libraby/aniron/Aniron.woff),
+        url(../font_family_libraby/aniron/Aniron.woff2);
+}
